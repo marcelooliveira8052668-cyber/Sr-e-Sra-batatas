@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sr e Sra Batatas</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Sr e Sra Batatas 🍟</h1>
+
+      <nav>
+        <a href="#">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#pedido">Pedido</a>
+      </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner"></section>
+
+    <!-- HISTÓRIA -->
+    <section class="historia">
+      <h2>A História da Batata Recheada </h2>
+
+      <p>
+        
+        Sr. e Sra. Batatas nasceu em
+        Osasco através da dedicação e do talento de um casal empreendedor:
+        Andreia e Serginho, moradores da região, eles começaram preparando
+        batatas recheadas de forma simples, dentro do próprio condomínio onde
+        vivem, para amigos, vizinhos e conhecidos. O que começou como uma ideia
+        para compartilhar uma comida saborosa rapidamente se transformou em um
+        grande sucesso. As receitas criadas pelo casal conquistaram o paladar de
+        muitas pessoas, e os pedidos começaram a aumentar cada vez mais. Hoje,
+        cada batata preparada pela Sr. e Sra. Batatas carrega o mesmo cuidado do
+        início: ingredientes frescos, muito capricho e combinações deliciosas.
+        Entre os sabores mais queridos estão a batata de strogonoff, a bolonhesa
+        e as receitas especiais da casa, que fazem sucesso entre os clientes.
+        Mais do que um prato saboroso, a Sr. e Sra. Batatas representa o sonho
+        de um casal que transformou uma ideia simples em uma experiência
+        deliciosa para todos que experimentam.
+      </p>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="cardapio" class="cardapio">
+      <h2>Nosso Cardápio</h2>
+
+      <div class="produtos">
+        <div class="produto">
+          <img src="img/batata-strogonofe.jpg" />
+          <h3>Batata Strogonoff</h3>
+          <p>Frango, bacon, mussarela e catupiry</p>
+          <span>R$25</span>
+          <button onclick="addPedido('Batata Strogonoff', 25)">
+            Adicionar
+          </button>
+        </div>
+
+        <div class="produto">
+          <img src="img/batata-bolonhesa.jpg" />
+          <h3>Batata Bolonhesa</h3>
+          <p>Carne moída, molho vermelho e queijo</p>
+          <span>R$25</span>
+          <button onclick="addPedido('Batata Bolonhesa', 25)">Adicionar</button>
+        </div>
+
+        <div class="produto">
+          <img src="img/batata-recheadas.jpg" />
+          <h3>Batata da Casa</h3>
+          <p>Brócolis, bacon, mussarela e parmesão</p>
+          <span>R$25</span>
+          <button onclick="addPedido('Batata da Casa', 25)">Adicionar</button>
+        </div>
+
+        <div class="produto">
+          <img src="img/refri.jpg" />
+          <h3>Refrigerante</h3>
+          <span>R$6</span>
+          <button onclick="addPedido('Refrigerante', 6)">Adicionar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDIDO -->
+    <section id="pedido" class="pedido">
+      <h2>Fazer Pedido</h2>
+
+      <input type="text" id="nome" placeholder="Seu nome" />
+
+      <input type="text" id="endereco" placeholder="Seu endereço" />
+
+      <select id="pagamento">
+        <option>Dinheiro na entrega</option>
+        <option>Cartão na entrega</option>
+        <option>Pix</option>
+      </select>
+
+      <ul id="listaPedido"></ul>
+
+      <p id="total">Total: R$0</p>
+
+      <p>Tempo estimado: 30 - 40 minutos</p>
+
+      <button onclick="enviarPedido()">Enviar Pedido no WhatsApp</button>
+    </section>
+
+    <footer>
+      <p>© 2026 Sr e Sra Batatas</p>
+    </footer>
+
+    <a href="https://wa.me/5511942038103" class="whatsapp" target="_blank">
+      📱
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

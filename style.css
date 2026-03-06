@@ -1,0 +1,223 @@
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+/* CABEÇALHO */
+
+header{
+background:#111;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+}
+
+header h1{
+margin:0;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd54f;
+}
+
+/* BANNER */
+
+.banner{
+height:300vh;
+width:100%;
+
+background-image:url("img/banner.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* HISTÓRIA */
+
+.historia{
+padding:60px 20px;
+text-align:center;
+background:white;
+}
+
+.historia h2{
+font-size:36px;
+margin-bottom:20px;
+color:#333;
+}
+
+.historia p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+line-height:1.6;
+color:#555;
+}
+
+/* CARDÁPIO */
+
+.cardapio{
+padding:60px 20px;
+text-align:center;
+}
+
+.cardapio h2{
+font-size:35px;
+margin-bottom:40px;
+}
+
+.produtos{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+/* PRODUTO */
+
+.produto{
+background:white;
+padding:20px;
+width:230px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.produto:hover{
+transform:translateY(-5px);
+}
+
+.produto img{
+width:100%;
+border-radius:10px;
+}
+
+.produto h3{
+margin:10px 0;
+}
+
+.produto span{
+font-weight:bold;
+color:#e53935;
+}
+
+/* BOTÕES */
+
+button{
+background:#e53935;
+color:white;
+border:none;
+padding:10px 15px;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+button:hover{
+background:#b71c1c;
+}
+
+/* PEDIDO */
+
+.pedido{
+background:white;
+margin:40px auto;
+padding:40px;
+border-radius:10px;
+text-align:center;
+max-width:600px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CAMPOS */
+
+input, select{
+width:80%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+/* LISTA PEDIDO */
+
+#listaPedido{
+list-style:none;
+padding:0;
+}
+
+#listaPedido li{
+margin:10px 0;
+}
+
+/* RODAPÉ */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* BOTÃO WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:30px;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+.produtos{
+flex-direction:column;
+align-items:center;
+}
+
+.banner{
+height:60vh;
+}
+
+.historia h2{
+font-size:28px;
+}
+
+}

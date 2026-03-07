@@ -37,7 +37,7 @@ color:#ffd54f;
 height:300vh;
 width:100%;
 
-background-image:url("img/banner.jpg");
+background-image:url("banner.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -226,4 +226,5 @@ font-size:28px;
 }
 
 }
+
 
